@@ -1,16 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import Layout from '../components/Layout'
-import Todos from '../components/Todos'
-import AddNewTaskButton from '../components/AddNewTaskButton'
-import AddNewTaskInput from '../components/AddNewTaskInput'
+import Welcome from '../components/Welcome'
+import Nameform from '../components/Nameform'
 import css from '../style.css'
 
 const Index = () => (
   <div className="content">
     <div className='todo-content'>
-      <Layout />
-      <Todos />
-
+      <Welcome />
+      <Nameform />
     </div>
   </div>
 )
