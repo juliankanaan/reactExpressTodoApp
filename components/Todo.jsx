@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Delete from '../components/Delete'
+import '../style.css'
 
 class Todo extends React.Component {
   constructor(props) {
@@ -10,12 +11,13 @@ class Todo extends React.Component {
 
   render(){
     return (
-
-          <div className='todo' style={{display: "flex"}}>
+          <div className='container'>
+          <div className="todo">
             <div>
               {this.props.text}
             </div>
-            <Delete />
+
+          </div>
           </div>
 
           );

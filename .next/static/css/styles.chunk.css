@@ -10037,4 +10037,26 @@ a.text-dark:hover, a.text-dark:focus {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+.todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.content {
+  margin: 30px;
+}
+.day-summary span {
+  color: orange;
+}
+.todo-content {
+  width: 300px;
+}
+.add {
+  width: 100%;
+  border-radius: 100px;
+  background-color: #6488cc;
+  margin-top: 20px;
+}
+
+
 /*# sourceMappingURL=styles.chunk.css.map*/

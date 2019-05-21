@@ -10,7 +10,7 @@ class DaySummary extends React.Component {
   render(){
     return (
           <div className='day-summary'>
-            You have {this.props.tasksOutsanding} tasks today
+            You have <span>{this.props.tasksOutsanding} tasks</span> today
           </div>
 
           );

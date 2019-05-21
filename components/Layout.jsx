@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Header from '../components/Header'
+import '../style.css'
 
 class Layout extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Layout extends React.Component {
 
   render(){
     return (
-          <div className='container'>
+          <div className="todo-content" >
             <Header />
             {this.props.children}
           </div>
