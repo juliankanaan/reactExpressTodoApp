@@ -51,7 +51,7 @@ class Todos extends React.Component {
         </div>
         <form onSubmit={this.handleSubmit}>
         <AddNewTaskInput onValueChange={this.handleValueChange} />
-        <button type="submit">Add new task</button>
+        <button className="add" type="submit">Add new task</button>
         </form>
         </div>
           );

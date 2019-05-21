@@ -1,4 +1,6 @@
-
+.card {
+  box-shadow: 0 7px 34px 0 rgba(0,0,0,.07), 0 11px 34px 0 rgba(0,0,0,.04);
+}
 .todo {
   display: flex;
   justify-content: space-between;
@@ -18,4 +20,21 @@
   border-radius: 100px;
   background-color: #6488cc;
   margin-top: 20px;
+  color: white;
+  height: 2.5em;
+}
+.completed {
+  text-decoration: line-through;
+}
+.form-group{
+  text-align: center;
+  margin: 20px;
+}
+input {
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
 }

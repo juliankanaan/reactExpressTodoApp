@@ -6,18 +6,24 @@ import '../style.css'
 class Todo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {value: '', completed: false};
+    this.markCompleted = this.markCompleted.bind(this);
+  }
+  markCompleted(event){
+    //alert("hi");
+    console.log(event.target);
+    this.setState({completed: true});
   }
 
   render(){
+      let className = "todo";
+      if (this.state.completed) {
+        className += ' completed'; // add class to it if is completed for css to target
+      }
     return (
-          <div className='container'>
-          <div className="todo">
-            <div>
-              {this.props.text}
-            </div>
 
-          </div>
+          <div onClick={this.markCompleted} className={className}>
+              {this.props.text}
           </div>
 
           );
